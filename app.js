@@ -211,7 +211,9 @@ app.use((err, req, res, next) => {
     if (!err.message) err.message = "Something went wrong";
     res.status(statusCode).render('error', { err });
 });
-
-app.listen(3000, () => {
-    console.log('Service on port 3000');
+// save heroku port (80) OR localhost 3000 port to port
+const port = process.env.PORT || 3000;
+// start server port
+app.listen(port, () => {
+    console.log(`Service on port ${port}`);
 });
