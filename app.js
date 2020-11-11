@@ -135,7 +135,6 @@ const connectSrcUrls = [
     "https://a.tiles.mapbox.com/",
     "https://b.tiles.mapbox.com/",
     "https://events.mapbox.com/",
-    "https://still-plains-89842.herokuapp.com/",
 ];
 const fontSrcUrls = [];
 app.use(
