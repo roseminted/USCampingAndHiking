@@ -19,7 +19,7 @@ module.exports.register = async (req, res, next) => {
             // check user in console
             // console.log(registeredUser)
             // if user is created, send flash message and redirect to campgrounds page
-            req.flash('success', 'Welcome to Yelp Camp!');
+            req.flash('success', 'Welcome to US Camping &amp; Hiking!');
             res.redirect('/campgrounds');
         })
         // if an error occurs, catch the error

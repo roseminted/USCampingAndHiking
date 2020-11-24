@@ -101,6 +101,7 @@ module.exports.updateCampground = async (req, res) => {
             // cloudinary method to destroy on the uploader, you pass in the filename that you want deleted
             await cloudinary.uploader.destroy(filename);
         }
+        // delete images from mongodb
         await campground.updateOne({ $pull: { images: { filename: { $in: req.body.deleteImages } } } })
         console.log(campground)
     }

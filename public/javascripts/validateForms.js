@@ -1,7 +1,7 @@
 // JavaScript for disabling form submissions if there are invalid fields
 (function () {
     'use strict'
-
+    // assist with displaying files names when uploading images
     bsCustomFileInput.init();
 
     // Fetch all the forms we want to apply custom Bootstrap validation styles to

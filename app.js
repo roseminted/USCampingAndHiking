@@ -103,7 +103,7 @@ const sessionConfig = {
         // this says that our cookies that are set through this session are only accessible through http and not through javascript
         httpOnly: true,
         // this says that this cookie will only work over https
-        // secure: true,
+        secure: true,
         // expires a week from now (in miliseconds) + 1000 milisecs in 1 sec * 60 secs in 1 min * 60 min in an hour...etc
         expires: Date.now() + 1000 * 60 * 60 * 24 * 7,
         maxAge: 1000 * 60 * 60 * 24 * 7
